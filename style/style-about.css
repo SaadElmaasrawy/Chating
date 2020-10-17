@@ -1,0 +1,181 @@
+/* Global Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* End Of Global Rules */
+
+/* Navbar */
+
+nav {
+    width: 90%;
+    display: flex;
+    margin: 59px auto 0;
+    position: relative;
+}
+
+ul img {
+    display: none;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 76px;
+    font-size: 20px;
+}
+
+.active-nav {
+    color: #6C63FF;
+    
+}
+
+ul li {
+display: inline-block;
+}
+
+ul{
+    position: absolute;
+    right: 0;
+}
+a {
+    transition-duration: 0.6s;
+
+}
+a:hover {
+    transition-duration: 0.6s;
+    color: #6C63FF;
+}
+
+
+/* End Of Navbar */
+/* Contect */
+
+.content{
+    width: 90%;
+    display: flex;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+/* Left Content */
+
+.left-content{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.left-content h1 {
+    font-size: 72px;
+    font-weight: 400;
+}
+.bold {
+    font-weight: 700;
+}
+
+.header {
+    width: 417px;
+}
+
+.content-p-1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 17px;
+    width: 400px;
+    
+}
+.content-p-2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 17px;
+    width: 680px;
+    
+}
+
+/* End Of Left Content */
+
+/* Right Content */
+
+.right-content {
+    position: relative;
+    right: -230px;
+    
+}
+
+/* End Of Right Content */
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+
+    .logo img {
+        width: 100px;
+        height: 27px;
+    }
+    ul img {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .menu ul li {
+        display: none;
+    }
+    .active-a{
+        font-size: 18px;
+    }
+
+
+    .content {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        width: 90%;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+
+    .right-content{
+        right: 0;
+        margin: auto;
+    }
+
+    .right-content img {
+        width: 229px;
+        height: 166;
+    }
+
+    .left-content h1 {
+        font-size: 30px;
+    }
+    .content-p-1 {
+        font-size: 18px;
+    }
+    .content-p-2 {
+        font-size: 16px;
+    }
+    .left-content{
+        margin-top: 50px;
+        width: 10%;
+    }
+
+    .btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .elipses {
+        width: 200px;
+        margin: 40px 0px 50px 170px;
+    }
+
+}
+

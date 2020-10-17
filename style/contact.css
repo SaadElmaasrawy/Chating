@@ -1,0 +1,193 @@
+/* Global Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* End Of Global Rules */
+
+/* Navbar */
+
+nav {
+    width: 90%;
+    display: flex;
+    margin: 59px auto 0;
+    position: relative;
+}
+
+ul img {
+    display: none;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 76px;
+    font-size: 20px;
+}
+
+.active-nav {
+    color: #6C63FF;
+    
+}
+
+ul li {
+display: inline-block;
+}
+
+ul{
+    position: absolute;
+    right: 0;
+}
+a {
+    transition-duration: 0.6s;
+
+}
+a:hover {
+    transition-duration: 0.6s;
+    color: #6C63FF;
+}
+
+
+/* End Of Navbar */
+
+/* Con */
+.con {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.con-1{
+    display: flex;
+}
+.name h1{
+    font-size: 30px;
+}
+.ms-name {
+    width: 433px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.email h1 {
+    font-size: 30px;
+}
+
+.email{
+    margin-left: 150px;
+
+}
+
+.ms-email{
+    width: 648px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.content h1 {
+    font-size: 30px;
+}
+
+.ms-content {
+    width: 1230px;
+    height: 220px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 32px;
+    resize: none;
+    padding: 10px;
+}
+
+.con-content {
+    margin-top: 50px;
+}
+
+.btn button {
+    font-size: 20px;
+    width: 232px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #6C63FF;
+    cursor: pointer;
+}
+
+.btn{
+    margin-left: 550px;
+    margin-bottom: 50px;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: red;
+    opacity: 50%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+
+    .logo img {
+        width: 100px;
+        height: 27px;
+    }
+    ul img {
+        display: block;
+        cursor: pointer;
+
+    }
+    .active-a{
+        font-size: 18px;
+    }
+    .menu ul li {
+        display: none;
+    }
+
+    .ms-name , .ms-email , .ms-content {
+        width: 100%;
+        font-size: 20px;
+    }
+    .email {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .con-1{
+        flex-direction: column;
+    }
+    .con-content {
+        margin-top: 20px;
+    }
+    .btn button{
+        width: 124px;
+    }
+    .btn {
+        margin-left: 40%;
+    }
+    .con {
+        margin-top: 50px;
+    }
+    .name h1, .email h1, .con-content h1{
+        font-size: 20px;
+    }
+    ::placeholder{
+        font-size: 18px;
+    }
+}
